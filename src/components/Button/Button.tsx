@@ -19,6 +19,18 @@ const StyledButton = styled.button<StyledButtonProps>`
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
   transition: background-color 0.3s;
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 6px 12px;
+    font-size: 12px;
+    width: 100%;
+  }
 
   &:hover {
     background-color: ${({ $backgroundColor, disabled }) =>

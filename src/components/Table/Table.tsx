@@ -7,6 +7,18 @@ const StyledTable = styled.table<{ disabled?: boolean }>`
   border-collapse: collapse;
   opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'auto')};
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 12px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 `;
 
 export const Table: React.FC<TableProps> = ({ children, disabled }) => {

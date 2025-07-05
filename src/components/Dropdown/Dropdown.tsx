@@ -7,6 +7,20 @@ const StyledSelect = styled.select<{ disabled?: boolean }>`
   font-size: 16px;
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    padding: 6px;
+    font-size: 15px;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 4px;
+    font-size: 14px;
+    width: 100%;
+  }
 `;
 
 export const Dropdown: React.FC<DropdownProps> = ({ options, selected, disabled, onChange }) => {
