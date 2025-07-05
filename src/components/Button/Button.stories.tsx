@@ -3,6 +3,8 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { Button } from './Button';
 
+import type { StoryFn } from '@storybook/react-webpack5';
+
 export default {
   title: 'UI/Button',
   component: Button,
@@ -12,8 +14,6 @@ export default {
     disabled: { control: 'boolean' },
   },
 } as Meta<typeof Button>;
-
-import type { StoryFn } from '@storybook/react';
 
 const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;
 

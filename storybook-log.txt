@@ -1,0 +1,96 @@
+
+> rui_yin_ui_garden@0.1.0 storybook
+> storybook dev -p 6006 -p 8083
+
+storybook v9.0.15
+
+info => Serving static files from ././public at /
+info => Starting manager..
+info => Starting preview..
+info => Loading Webpack configuration from `node_modules/react-scripts`
+info => Removing existing JavaScript and TypeScript rules.
+info => Modifying Create React App rules.
+info Addon-docs: using MDX3
+info => Using default Webpack5 setup
+info Using tsconfig paths for react-docgen
+ERROR in [eslint] 
+src/components/Button/Button.stories.tsx
+  Line 6:1:  Do not import renderer package "@storybook/react" directly. Use a framework package instead (e.g. @storybook/nextjs, @storybook/react-vite, @storybook/react-webpack5, @storybook/react-native-web-vite, @storybook/experimental-nextjs-vite)  storybook/no-renderer-packages
+
+Search for the keywords to learn more about each error.
+
+preview compiled with 1 error
+
+
+
+> rui_yin_ui_garden@0.1.0 storybook
+> storybook dev -p 6006 -p 8083
+
+storybook v9.0.15
+
+info => Serving static files from ././public at /
+info => Starting manager..
+info => Starting preview..
+info => Loading Webpack configuration from `node_modules/react-scripts`
+info => Removing existing JavaScript and TypeScript rules.
+info => Modifying Create React App rules.
+info Addon-docs: using MDX3
+info => Using default Webpack5 setup
+info Using tsconfig paths for react-docgen
+ERROR in [eslint] 
+src/components/Button/Button.stories.tsx
+  Line 6:1:  Do not import renderer package "@storybook/react" directly. Use a framework package instead (e.g. @storybook/nextjs, @storybook/react-vite, @storybook/react-webpack5, @storybook/react-native-web-vite, @storybook/experimental-nextjs-vite)  storybook/no-renderer-packages
+
+Search for the keywords to learn more about each error.
+
+preview compiled with 1 error
+
+
+
+> rui_yin_ui_garden@0.1.0 storybook
+> storybook dev -p 6006 -p 8083
+
+storybook v9.0.15
+
+info => Serving static files from ././public at /
+info => Starting manager..
+info => Starting preview..
+info => Loading Webpack configuration from `node_modules/react-scripts`
+info => Removing existing JavaScript and TypeScript rules.
+info => Modifying Create React App rules.
+info Addon-docs: using MDX3
+info => Using default Webpack5 setup
+info Using tsconfig paths for react-docgen
+ERROR in [eslint] 
+src/components/Button/Button.stories.tsx
+  Line 6:1:  Do not import renderer package "@storybook/react" directly. Use a framework package instead (e.g. @storybook/nextjs, @storybook/react-vite, @storybook/react-webpack5, @storybook/react-native-web-vite, @storybook/experimental-nextjs-vite)  storybook/no-renderer-packages
+
+Search for the keywords to learn more about each error.
+
+preview compiled with 1 error
+
+
+
+> rui_yin_ui_garden@0.1.0 storybook
+> storybook dev -p 6006 -p 8083
+
+storybook v9.0.15
+
+info => Serving static files from ././public at /
+info => Starting manager..
+info => Starting preview..
+info => Loading Webpack configuration from `node_modules/react-scripts`
+info => Removing existing JavaScript and TypeScript rules.
+info => Modifying Create React App rules.
+info Addon-docs: using MDX3
+info => Using default Webpack5 setup
+info Using tsconfig paths for react-docgen
+ERROR in [eslint] 
+src/components/Button/Button.stories.tsx
+  Line 6:1:  Do not import renderer package "@storybook/react" directly. Use a framework package instead (e.g. @storybook/nextjs, @storybook/react-vite, @storybook/react-webpack5, @storybook/react-native-web-vite, @storybook/experimental-nextjs-vite)  storybook/no-renderer-packages
+
+Search for the keywords to learn more about each error.
+
+preview compiled with 1 error
+
+

@@ -3,7 +3,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { ButtonProps } from './Button.types';
 
-const StyledButton = styled.button<ButtonProps>`
+// 为 styled-components 创建一个独立的类型，只包含样式相关的属性
+interface StyledButtonProps {
+  disabled?: boolean;
+  $backgroundColor?: string;
+}
+
+const StyledButton = styled.button<StyledButtonProps>`
   padding: 10px 20px;
   font-size: 16px;
   background-color: ${({ $backgroundColor }) => $backgroundColor || '#007bff'};
