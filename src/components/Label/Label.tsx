@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { LabelProps } from './Label.types';
 
-const StyledLabel = styled.label<LabelProps>`
+const StyledLabel = styled.label<{ color?: string; disabled?: boolean }>`
   color: ${({ color, disabled }) => (disabled ? 'gray' : color || 'black')};
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'default')};
   opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};

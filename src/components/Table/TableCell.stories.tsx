@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { TableCell } from './TableCell';
 
 const meta: Meta<typeof TableCell> = {
-  title: 'Components/Table/TableCell',
+  title: 'UI/Table/TableCell',
   component: TableCell,
 };
 

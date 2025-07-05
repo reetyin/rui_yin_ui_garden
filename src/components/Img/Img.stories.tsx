@@ -1,10 +1,13 @@
-import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { Img } from './Img';
 
-export default {
-  title: 'Components/Img',
+const meta: Meta<typeof Img> = {
+  title: 'UI/Img',
   component: Img,
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
   argTypes: {
     src: { control: 'text' },
     alt: { control: 'text' },
@@ -12,21 +15,27 @@ export default {
     height: { control: 'text' },
     disabled: { control: 'boolean' },
   },
-} as ComponentMeta<typeof Img>;
-
-const Template: ComponentStory<typeof Img> = (args) => <Img {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {
-  src: 'https://via.placeholder.com/150',
-  alt: 'Placeholder image',
-  width: '150px',
-  height: '150px',
-  disabled: false,
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  ...Default.args,
-  disabled: true,
+export default meta;
+type Story = StoryObj<typeof Img>;
+
+export const Default: Story = {
+  args: {
+    src: 'https://via.placeholder.com/150',
+    alt: 'Placeholder image',
+    width: '150px',
+    height: '150px',
+    disabled: false,
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    src: 'https://via.placeholder.com/150',
+    alt: 'Placeholder image',
+    width: '150px',
+    height: '150px',
+    disabled: true,
+  },
 };

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { TableHeader } from './TableHeader';
 
 const meta: Meta<typeof TableHeader> = {
-  title: 'Components/Table/TableHeader',
+  title: 'UI/Table/TableHeader',
   component: TableHeader,
 };
 

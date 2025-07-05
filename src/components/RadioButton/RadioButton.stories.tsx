@@ -1,10 +1,13 @@
-import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { RadioButton } from './RadioButton';
 
-export default {
-  title: 'Components/RadioButton',
+const meta: Meta<typeof RadioButton> = {
+  title: 'UI/RadioButton',
   component: RadioButton,
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
   argTypes: {
     name: { control: 'text' },
     value: { control: 'text' },
@@ -12,21 +15,27 @@ export default {
     checked: { control: 'boolean' },
     disabled: { control: 'boolean' },
   },
-} as ComponentMeta<typeof RadioButton>;
-
-const Template: ComponentStory<typeof RadioButton> = (args) => <RadioButton {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {
-  name: 'example',
-  value: 'option1',
-  label: 'Option 1',
-  checked: false,
-  disabled: false,
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  ...Default.args,
-  disabled: true,
+export default meta;
+type Story = StoryObj<typeof RadioButton>;
+
+export const Default: Story = {
+  args: {
+    name: 'example',
+    value: 'option1',
+    label: 'Option 1',
+    checked: false,
+    disabled: false,
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    name: 'example',
+    value: 'option1',
+    label: 'Option 1',
+    checked: false,
+    disabled: true,
+  },
 };

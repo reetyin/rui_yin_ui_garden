@@ -4,7 +4,7 @@ import { TableRow } from './TableRow';
 import { TableCell } from './TableCell';
 
 const meta: Meta<typeof TableRow> = {
-  title: 'Components/Table/TableRow',
+  title: 'UI/Table/TableRow',
   component: TableRow,
 };
 

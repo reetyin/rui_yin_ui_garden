@@ -1,11 +1,14 @@
 // src/components/Card/Card.stories.tsx
-import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { Card } from './Card';
 
-export default {
+const meta: Meta<typeof Card> = {
   title: 'UI/Card',
   component: Card,
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
   argTypes: {
     title: { control: 'text' },
     description: { control: 'text' },
@@ -13,22 +16,25 @@ export default {
     disabled: { control: 'boolean' },
     onClick: { action: 'clicked' },
   },
-} as ComponentMeta<typeof Card>;
-
-const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {
-  title: 'Card Title',
-  description: 'This is a description of the card.',
-  imageUrl: 'https://via.placeholder.com/300x180.png?text=Card+Image',
-  disabled: false,
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  title: 'Disabled Card',
-  description: 'This card is disabled and not clickable.',
-  imageUrl: 'https://via.placeholder.com/300x180.png?text=Disabled',
-  disabled: true,
+export default meta;
+type Story = StoryObj<typeof Card>;
+
+export const Default: Story = {
+  args: {
+    title: 'Card Title',
+    description: 'This is a description of the card.',
+    imageUrl: 'https://via.placeholder.com/300x180.png?text=Card+Image',
+    disabled: false,
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    title: 'Disabled Card',
+    description: 'This card is disabled and not clickable.',
+    imageUrl: 'https://via.placeholder.com/300x180.png?text=Disabled',
+    disabled: true,
+  },
 };

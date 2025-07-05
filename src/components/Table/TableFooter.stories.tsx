@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { TableFooter } from './TableFooter';
 
 const meta: Meta<typeof TableFooter> = {
-  title: 'Components/Table/TableFooter',
+  title: 'UI/Table/TableFooter',
   component: TableFooter,
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { DropdownProps } from './Dropdown.types';
 
-const StyledSelect = styled.select<DropdownProps>`
+const StyledSelect = styled.select<{ disabled?: boolean }>`
   padding: 8px;
   font-size: 16px;
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
@@ -14,7 +14,7 @@ export const Dropdown: React.FC<DropdownProps> = ({ options, selected, disabled,
     <StyledSelect
       disabled={disabled}
       value={selected}
-      onChange={(e) => onChange && onChange(e.target.value)}
+      onChange={(e) => onChange && onChange((e.target as HTMLSelectElement).value)}
     >
       {options.map((option) => (
         <option key={option} value={option}>{option}</option>

@@ -1,32 +1,36 @@
 // src/components/Button/Button.stories.tsx
-import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { Button } from './Button';
 
-import type { StoryFn } from '@storybook/react-webpack5';
-
-export default {
+const meta: Meta<typeof Button> = {
   title: 'UI/Button',
   component: Button,
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
   argTypes: {
     label: { control: 'text' },
-    backgroundColor: { control: 'color' },
+    $backgroundColor: { control: 'color' },
     disabled: { control: 'boolean' },
   },
-} as Meta<typeof Button>;
-
-const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {
-  label: 'Click Me',
-  $backgroundColor: '#007bff',
-  disabled: false,
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  label: 'Disabled',
-  $backgroundColor: '#cccccc',
-  disabled: true,
+export default meta;
+type Story = StoryObj<typeof Button>;
+
+export const Default: Story = {
+  args: {
+    label: 'Click Me',
+    $backgroundColor: '#007bff',
+    disabled: false,
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    label: 'Disabled',
+    $backgroundColor: '#cccccc',
+    disabled: true,
+  },
 };

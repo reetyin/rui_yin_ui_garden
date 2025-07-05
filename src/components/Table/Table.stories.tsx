@@ -7,7 +7,7 @@ import { TableCell } from './TableCell';
 import { TableFooter } from './TableFooter';
 
 const meta: Meta<typeof Table> = {
-  title: 'Components/Table',
+  title: 'UI/Table',
   component: Table,
 };
 
